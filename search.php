@@ -29,9 +29,9 @@ get_header();
 
                     endwhile; ?>
                 </div>
-                <?php the_posts_navigation();
+                <?php the_posts_navigation(); ?>
 
-            else : ?>
+            <?php else : ?>
 
                 <div class="d-flex flex-wrap posts-container">
                     <?php get_template_part( 'template-parts/content/content', 'none' ); ?>
