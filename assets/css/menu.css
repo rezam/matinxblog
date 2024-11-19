@@ -1,0 +1,167 @@
+/* Navigation - Start */
+header ul.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header ul.menu li {
+    list-style: none;
+    padding-left: 20px;
+}
+
+header ul.menu li a {
+    text-decoration: initial;
+}
+
+header nav .nav-item.dropdown .dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    border: initial;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+header nav .nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+
+header nav .dropdown-submenu {
+    position: relative;
+}
+
+header nav .dropdown-submenu .dropdown-menu {
+    display: none;
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    transform: translateX(-10px);
+}
+
+header nav .dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+header nav .nav-item.dropdown > a.dropdown-toggle::after {
+    font-size: 0.75em;
+    transition: transform 0.3s ease;
+}
+
+header nav .dropdown-menu .nav-item.dropdown > a.dropdown-toggle::after {
+    transform: rotate(270deg);
+}
+
+header nav .dropdown-submenu > a.dropdown-toggle::after {
+    transform: rotate(0);
+    font-size: 0.75em;
+}
+
+header nav .dropdown-menu, .dropdown-submenu .dropdown-menu {
+    transition: all 0.3s;
+}
+
+header .side-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 80%;
+    max-width: 300px;
+    background-color: #fff;
+    z-index: 1000;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+header .side-menu.show {
+    left: 0;
+}
+
+header .close-menu {
+    font-size: 1.5em;
+    font-weight: bold;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+header .navbar-toggler {
+    display: block;
+}
+
+header .side-menu .navbar-nav .nav-link {
+    padding: 10px 20px;
+    font-size: 1.2em;
+}
+
+header .side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 60px;
+    transition: 0.3s ease-in-out;
+}
+
+header .side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header .side-menu ul.dropdown-menu {
+    display: none;
+    background-color: initial;
+    border: initial;
+}
+
+header .side-menu ul li {
+    padding: 8px 12px;
+}
+
+header .side-menu ul > li > a::after {
+    transition: all 0.3s;
+}
+
+header .side-menu ul > li.opened > a::after {
+    transform: rotate(180deg);
+    transition: all 0.3s;
+}
+
+header .side-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .menu-toggle {
+    font-size: 30px;
+    color: black;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header .menu-toggle {
+        display: block;
+    }
+
+    header .side-menu.open {
+        left: 0;
+    }
+}
+
+/* Navigation - End */

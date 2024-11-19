@@ -1,0 +1,137 @@
+/*!
+Theme Name: MatinxBlog
+Theme URI: http://flexytheme.com/
+Author: rezamas
+Author URI: https://flexytheme.com/contact/
+Description: Flat, minimal and modern looking WordPress theme for who\'s love in blogging!
+Version: 1.0.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: matinxblog
+Tags: flat, blog, weblog, minimal, vlog, modern
+*/
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+#primary[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+body {
+	font-family: "Source Sans 3";
+}
+
+a {
+	color: initial;
+	text-decoration: initial;
+}
+
+header .logo {
+	width: 160px;
+	height: 60px;
+}
+
+#primary.site-main {
+	padding: 30px 0;
+}
+
+footer {
+	background-color: #f6f6f7;
+}
+
+footer .main-footer {
+	padding: 60px 0 30px 0;
+}
+
+.footer-col-headline {
+	font-size: 19px;
+	margin-bottom: 20px;
+}
+
+.footer-col-content {
+	color: #696A75;
+}
+
+.footer-col-content .about-us {
+	padding-right: 100px;
+}
+
+.footer-col-content ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.footer-col-content ul li {
+	padding-bottom: 7px;
+}
+
+.footer-col-content ul li a {
+	color: #696A75;
+}
+
+.footer-col-content ul li .label {
+	color: #212529;
+	font-weight: 500;
+}
+
+footer .copyright {
+	padding: 30px 0;
+	border-top: 1px solid #DCDDDF
+}
+
+.post-cats {
+	margin-bottom: 10px;
+}
+
+.post-cats ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+.post-cats ul li {
+	list-style: none;
+	padding: 2px 5px;
+	margin-right: 7px;
+	background-color: #4B6BFB0d;
+	border-radius: 5px;
+}
+
+.post-cats ul li a {
+	color: #4B6BFB;
+	font-size: 14px;
+}

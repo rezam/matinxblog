@@ -1,0 +1,11 @@
+#customize-theme-controls li.matinx-heading-box-wrap .mx-heading {
+    background-color: gray;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 5px;
+}

@@ -1,0 +1,56 @@
+/* Post Box - Archive - Start */
+#primary.site-main .post-container {
+    width: 33.33%;
+}
+
+#primary.site-main .post-container .post-box {
+    margin: 10px;
+    border: 1px solid #E8E8EA;
+    border-radius: 12px;
+}
+
+#primary.site-main .post-container .post-box .thumbnail-container {
+    height: 300px;
+    padding: 10px;
+}
+
+#primary.site-main .post-container .post-box .thumbnail-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#primary.site-main .post-container .post-box .entry-main-content {
+    padding: 15px;
+}
+
+#primary.site-main .post-container .post-box .entry-header {
+    margin-bottom: 15px;
+    min-height: 70px;
+}
+
+#primary.site-main .post-container .post-box .entry-header h2 a {
+    text-decoration: initial;
+    font-weight: 600;
+    font-size: 24px;
+}
+/* Post Box - Archive - End */
+
+/* Post Box - Responsive - Start */
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {
+    #primary.site-main .post-container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767.98px) {}
+
+@media (max-width: 575.98px) {
+    #primary.site-main .post-container {
+        width: 100%;
+    }
+}
+/* Post Box - Responsive - End */
